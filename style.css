@@ -1,0 +1,142 @@
+/* Estilos base del cuerpo y fuente */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #111827; /* bg-gray-900 de Tailwind */
+    color: #E5E7EB; /* text-gray-200 de Tailwind */
+}
+
+/* Efecto Glassmorphism para el header y otros elementos */
+.glassmorphism {
+    background: rgba(31, 41, 55, 0.6); /* bg-gray-800 de Tailwind con opacidad */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Efecto de brillo para el texto principal en la sección Hero */
+.hero-glow {
+    text-shadow: 0 0 15px rgba(59, 130, 246, 0.7), 0 0 30px rgba(59, 130, 246, 0.5);
+}
+
+/* Subrayado para los títulos de sección */
+.section-title-underline::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #3B82F6; /* Color principal del tema */
+    margin-top: 8px;
+    border-radius: 2px;
+}
+
+/* Transición para imágenes en las tarjetas de proyecto */
+.project-card img {
+    transition: transform 0.3s ease-out;
+}
+
+/* Efecto hover para imágenes en las tarjetas de proyecto */
+.project-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Estilos y transición para las etiquetas de habilidad */
+.skill-tag {
+    transition: all 0.2s ease-in-out;
+}
+
+/* Efecto hover para las etiquetas de habilidad */
+.skill-tag:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(59, 130, 246, 0.3);
+}
+
+/* Estilos para los enlaces de navegación */
+.nav-link {
+    position: relative;
+    transition: color 0.3s;
+}
+
+/* Línea animada debajo de los enlaces de navegación */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #3B82F6; /* Color principal del tema */
+    transition: width 0.3s ease-in-out;
+}
+
+/* Estilo para enlaces de navegación activos o en hover */
+.nav-link:hover::after, .nav-link.active::after {
+    width: 100%;
+}
+.nav-link:hover {
+    color: #60A5FA; /* Color principal del tema más claro */
+}
+
+/* Estilos para el botón primario */
+.btn-primary {
+    background-color: #3B82F6; /* Color principal del tema */
+    color: white;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.btn-primary:hover {
+    background-color: #2563EB; /* Color principal del tema más oscuro */
+    transform: translateY(-2px);
+}
+
+/* Estilos para el botón secundario */
+.btn-secondary {
+    border: 1px solid #3B82F6; /* Color principal del tema */
+    color: #3B82F6;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+.btn-secondary:hover {
+    background-color: #3B82F6;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Estilos personalizados para la barra de scroll (WebKit) */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #1F2937; /* bg-gray-800 de Tailwind */
+}
+::-webkit-scrollbar-thumb {
+    background: #3B82F6; /* Color principal del tema */
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #2563EB; /* Color principal del tema más oscuro */
+}
+
+/* Contenedor para el efecto de máquina de escribir */
+.typewriter-container {
+    display: inline-block;
+    min-height: 1.2em; /* Ajusta según el tamaño de fuente para evitar saltos de línea */
+}
+
+/* Texto del efecto de máquina de escribir */
+.typewriter-text {
+    display: inline-block;
+    overflow: hidden; /* Oculta el texto que aún no se ha "escrito" */
+    border-right: .1em solid #3B82F6; /* Simula el cursor de escritura */
+    white-space: nowrap; /* Evita que el texto se divida en múltiples líneas durante la animación */
+    margin: 0 auto;
+    letter-spacing: .05em;
+    /* La animación de escritura/borrado se controla mediante JavaScript */
+}
+
+/* Asegura que las secciones tengan suficiente padding superior
+   para compensar la altura de la barra de navegación fija.
+   El padding-top de la sección Hero se maneja con clases de Tailwind directamente en el HTML
+   para mayor control responsivo. */
+section:not(#hero) { /* Aplicar a todas las secciones excepto a la Hero que tiene su propio padding responsivo */
+    padding-top: 80px; /* Ajusta este valor según la altura de tu header */
+    margin-top: -80px; /* Necesario para que los anclajes de los enlaces funcionen correctamente con el header fijo */
+}
