@@ -1,0 +1,83 @@
+/* Estilos base del cuerpo y fuente */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #111827; /* bg-gray-900 */
+    color: #E5E7EB; /* text-gray-200 */
+}
+
+/* Animación de entrada para la página */
+.project-container {
+    animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilo para la imagen principal del proyecto */
+.project-hero-image {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover; /* o 'contain' si prefieres no recortar */
+    border-radius: 0.75rem; /* rounded-xl */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Títulos de las secciones dentro del estudio de caso */
+.case-study-title {
+    font-size: 1.5rem; /* text-2xl */
+    font-weight: 700; /* bold */
+    color: #fff;
+    margin-bottom: 1rem; /* mb-4 */
+    border-left: 4px solid #3B82F6; /* Azul principal */
+    padding-left: 1rem; /* pl-4 */
+}
+
+/* Estilos para los botones, para que coincidan con tu portafolio */
+.btn-primary {
+    background-color: #3B82F6;
+    color: white;
+    transition: background-color 0.3s, transform 0.2s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-primary:hover {
+    background-color: #2563EB;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    border: 1px solid #3B82F6;
+    color: #3B82F6;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-secondary:hover {
+    background-color: #3B82F6;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Etiquetas de tecnología */
+.tech-tag {
+    display: inline-flex;
+    align-items: center;
+    background-color: #374151; /* bg-gray-700 */
+    color: #D1D5DB; /* text-gray-300 */
+    padding: 6px 14px;
+    border-radius: 9999px; /* rounded-full */
+    font-size: 0.875rem; /* text-sm */
+    font-weight: 500; /* medium */
+}

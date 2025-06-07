@@ -18,7 +18,7 @@
                 <a href="#about" class="nav-link text-gray-300">Sobre Mí</a>
                 <a href="#skills" class="nav-link text-gray-300">Habilidades</a>
                 <a href="#projects" class="nav-link text-gray-300">Proyectos</a>
-                <a href="#experience" class="nav-link text-gray-300">Experiencia</a>
+                <a href="#education" class="nav-link text-gray-300">Formación</a>
                 <a href="#contact" class="nav-link text-gray-300">Contacto</a>
             </nav>
             <div class="md:hidden">
@@ -31,7 +31,7 @@
             <a href="#about" class="block py-2 px-6 text-gray-300 hover:bg-gray-700">Sobre Mí</a>
             <a href="#skills" class="block py-2 px-6 text-gray-300 hover:bg-gray-700">Habilidades</a>
             <a href="#projects" class="block py-2 px-6 text-gray-300 hover:bg-gray-700">Proyectos</a>
-            <a href="#experience" class="block py-2 px-6 text-gray-300 hover:bg-gray-700">Experiencia</a>
+            <a href="#education" class="block py-2 px-6 text-gray-300 hover:bg-gray-700">Formación</a>
             <a href="#contact" class="block py-2 px-6 text-gray-300 hover:bg-gray-700">Contacto</a>
         </div>
     </header>
@@ -51,8 +51,8 @@
                 <a href="#projects" class="btn-primary py-3 px-8 rounded-lg text-lg font-semibold inline-block">
                     <i class="fas fa-briefcase mr-2"></i>Ver Mis Proyectos
                 </a>
-                <a href="cv_placeholder.pdf" target="_blank" class="btn-secondary py-3 px-8 rounded-lg text-lg font-semibold inline-block">
-                    <i class="fas fa-download mr-2"></i>Ver Mi CV
+                <a href="cv.html" target="_blank" class="btn-secondary py-3 px-8 rounded-lg text-lg font-semibold inline-block">
+                    <i class="fas fa-file-alt mr-2"></i>Ver Mi CV
                 </a>
             </div>
             <div class="mt-12 flex justify-center space-x-6">
@@ -149,101 +149,60 @@
         <div class="container mx-auto py-20">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-2 section-title-underline mx-auto">Proyectos Destacados</h2>
             <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto">Algunos de los proyectos en los que he tenido el placer de participar.</p>
+            
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- ====== Tarjeta del Proyecto 1: GrowthTogether ====== -->
+                <!-- Se envuelve toda la tarjeta en una etiqueta <a> para que sea un gran enlace. -->
+                <a href="growthtogether.html" class="project-card block bg-gray-900 rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-transform duration-300 group">
+                    <div class="relative overflow-hidden">
+                        <img src="images/growthtogether.png" alt="Página de inicio de GrowthTogether" class="w-full h-56 object-contain p-2 group-hover:opacity-75 transition-opacity duration-300">
+                    </div>
+                    <div class="p-6 flex flex-col">
+                        <h3 class="text-2xl font-semibold mb-2 text-blue-400">GrowthTogether</h3>
+                        <p class="text-gray-400 mb-4 text-sm flex-grow">
+                            Landing Page para una comunidad de empresarios.
+                        </p>
+                        <div class="mt-auto pt-4 border-t border-gray-700 text-right text-blue-400 font-semibold">
+                            Ver Caso de Estudio &rarr;
+                        </div>
+                    </div>
+                </a>
+    
+                <!-- ====== Tarjeta del Proyecto 2: Backline.com ====== -->
+                <!-- Se repite el mismo patrón para el segundo proyecto. -->
+                <a href="backline.html" class="project-card block bg-gray-900 rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-transform duration-300 group">
+                     <div class="relative overflow-hidden">
+                        <img src="https://placehold.co/600x400/1F2937/FFFFFF?text=Backline.com&font=Inter" alt="Proyecto Backline.com" class="w-full h-56 object-cover group-hover:opacity-75 transition-opacity duration-300">
+                    </div>
+                    <div class="p-6 flex flex-col">
+                        <h3 class="text-2xl font-semibold mb-2 text-green-400">BACKLINE.COM</h3>
+                        <p class="text-gray-400 mb-4 text-sm flex-grow">
+                            Página web de alquiler de instrumentos.
+                        </p>
+                        <div class="mt-auto pt-4 border-t border-gray-700 text-right text-green-400 font-semibold">
+                            Ver Caso de Estudio &rarr;
+                        </div>
+                    </div>
+                </a>
+    
+                <!-- ====== Tarjeta de Proyecto Futuro (Placeholder) ====== -->
+                <!-- Esta tarjeta no tiene enlace, para que puedas añadir tu próximo proyecto. -->
                 <div class="project-card bg-gray-900 rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
-                    <img src="images/growthtogether.png" alt="Página de inicio de GrowthTogether, una comunidad para empresarios" class="w-full h-56 object-contain">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-semibold mb-3 text-blue-400">GrowthTogether</h3>
-                        <p class="text-gray-400 mb-4 text-sm">
-                            Landing Page de mi comunidad de empresarios
+                    <div class="relative overflow-hidden">
+                        <img src="https://placehold.co/600x400/EC4899/FFFFFF?text=Proyecto+3&font=Inter" alt="Próximo proyecto" class="w-full h-56 object-cover">
+                    </div>
+                    <div class="p-6 flex flex-col">
+                        <h3 class="text-2xl font-semibold mb-2 text-pink-400">Próximo Proyecto</h3>
+                        <p class="text-gray-400 mb-4 text-sm flex-grow">
+                            Aquí irá la descripción de mi siguiente gran proyecto.
                         </p>
-                        <div class="mb-4">
-                            <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-600 bg-blue-200 mr-2">HTML</span>
-                            <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-green-600 bg-green-200 mr-2">CSS</span>
-                            <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-purple-600 bg-purple-200">JavaScript</span>
-                        </div>
-                        <div class="flex justify-between items-center">
-                            <a href="https://growthogether.com" target="_blank" class="text-blue-400 hover:text-blue-300 font-medium"><i class="fas fa-external-link-alt mr-1"></i>Ver Demo</a>
-                            <a href="#" target="_blank" class="text-gray-400 hover:text-gray-300"><i class="fab fa-github mr-1"></i>Ver Código</a>
+                         <div class="mt-auto pt-4 border-t border-gray-700 text-right text-gray-500 font-semibold">
+                            Próximamente...
                         </div>
                     </div>
                 </div>
-                <div class="project-card bg-gray-900 rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
-                    <img src="https://placehold.co/600x400/10B981/FFFFFF?text=Proyecto+2&font=Inter" alt="Nombre del Proyecto 2" class="w-full h-56 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-semibold mb-3 text-green-400">BACKILINE.COM</h3>
-                        <p class="text-gray-400 mb-4 text-sm">
-                            Pagina web de alquiler de instrumentos 
-                        </p>
-                        <div class="mb-4">
-                            <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-yellow-600 bg-yellow-200 mr-2">Python</span>
-                            <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-red-600 bg-red-200 mr-2">Django</span>
-                            <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-indigo-600 bg-indigo-200">PostgreSQL</span>
-                        </div>
-                        <div class="flex justify-between items-center">
-                            <a href="#" target="_blank" class="text-green-400 hover:text-green-300 font-medium"><i class="fas fa-external-link-alt mr-1"></i>Ver Demo</a>
-                            <a href="#" target="_blank" class="text-gray-400 hover:text-gray-300"><i class="fab fa-github mr-1"></i>Ver Código</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card bg-gray-900 rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
-                     <img src="https://placehold.co/600x400/EC4899/FFFFFF?text=Proyecto+3&font=Inter" alt="Nombre del Proyecto 3" class="w-full h-56 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-semibold mb-3 text-pink-400">Nombre del Proyecto 3</h3>
-                        <p class="text-gray-400 mb-4 text-sm">
-                           Otro proyecto destacado. Varía las tecnologías y el tipo de proyecto para mostrar versatilidad.
-                        </p>
-                        <div class="mb-4">
-                            <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-teal-600 bg-teal-200 mr-2">Vue.js</span>
-                            <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-orange-600 bg-orange-200 mr-2">Firebase</span>
-                            <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-cyan-600 bg-cyan-200">TailwindCSS</span>
-                        </div>
-                        <div class="flex justify-between items-center">
-                            <a href="#" target="_blank" class="text-pink-400 hover:text-pink-300 font-medium"><i class="fas fa-external-link-alt mr-1"></i>Ver Demo</a>
-                            <a href="#" target="_blank" class="text-gray-400 hover:text-gray-300"><i class="fab fa-github mr-1"></i>Ver Código</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="experience" class="bg-gray-900 px-6">
-        <div class="container mx-auto py-20">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-2 section-title-underline mx-auto">Experiencia Laboral</h2>
-            <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto">Mi trayectoria profesional y los roles que he desempeñado.</p>
-            <div class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
-                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
-                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-odd:order-1 group-odd:group-hover:translate-x-0.5 group-even:group-hover:translate-x-0.5 text-slate-500 group-hover:bg-blue-500 transition-all duration-300 shadow-lg">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] glassmorphism p-6 rounded-lg shadow-xl">
-                        <div class="flex items-center justify-between space-x-2 mb-1">
-                            <h3 class="font-bold text-xl text-blue-300">Desarrollador [Tu Rol] en [Nombre Empresa]</h3>
-                            <time class="font-caveat font-medium text-indigo-300">MM/AAAA – MM/AAAA (o Actualidad)</time>
-                        </div>
-                        <p class="text-gray-400 text-sm">
-                            Describe tus responsabilidades, logros clave y tecnologías utilizadas. Usa verbos de acción.
-                            Ej: "Lideré el desarrollo del frontend para X plataforma, mejorando la experiencia de usuario en un Y%."
-                            "Colaboré en un equipo ágil para entregar Z funcionalidades."
-                        </p>
-                        <p class="text-sm text-gray-500 mt-2">Rol: [Ej: Frontend Lead, Backend Developer, FullStack Engineer]</p>
-                    </div>
-                </div>
-                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
-                     <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-odd:order-1 group-odd:group-hover:translate-x-0.5 group-even:group-hover:translate-x-0.5 text-slate-500 group-hover:bg-blue-500 transition-all duration-300 shadow-lg">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] glassmorphism p-6 rounded-lg shadow-xl">
-                        <div class="flex items-center justify-between space-x-2 mb-1">
-                            <h3 class="font-bold text-xl text-blue-300">Puesto Anterior en [Otra Empresa]</h3>
-                            <time class="font-caveat font-medium text-indigo-300">MM/AAAA – MM/AAAA</time>
-                        </div>
-                        <p class="text-gray-400 text-sm">
-                            Si no tienes experiencia laboral formal como desarrollador, puedes mencionar proyectos personales significativos, contribuciones a open source, o incluso experiencia en otros campos que demuestre habilidades transferibles (trabajo en equipo, resolución de problemas, etc.). "Llevo X tiempo aprendiendo programación y desarrollando proyectos como..."
-                        </p>
-                    </div>
-                </div>
+    
             </div>
         </div>
     </section>
@@ -251,21 +210,28 @@
     <section id="education" class="bg-gray-800 px-6">
         <div class="container mx-auto py-20">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-2 section-title-underline mx-auto">Formación Académica</h2>
-            <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto">Donde he adquirido mis conocimientos y habilidades.</p>
-            <div class="space-y-6">
-                <div class="glassmorphism p-6 rounded-lg shadow-xl">
-                    <h3 class="text-xl font-semibold text-blue-300">[Nombre de tu Título o Certificación]</h3>
-                    <p class="text-gray-400">[Nombre de la Institución, Bootcamp, Plataforma de Cursos (Ej: Platzi, Udemy, Coursera) o "Autodidacta"]</p>
-                    <p class="text-sm text-gray-500">MM/AAAA – MM/AAAA (o "En curso", "Finalizado en MM/AAAA")</p>
+            <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto">Mi principal centro de estudios y conocimientos.</p>
+            
+            <!-- Tarjeta principal de formación -->
+            <div class="max-w-2xl mx-auto">
+                <div class="glassmorphism p-6 rounded-lg shadow-xl text-center">
+                    <h3 class="text-xl font-semibold text-blue-300">Ingeniería de Sistemas</h3>
+                    <p class="text-gray-400">Universidad Libre</p>
+                    <p class="text-sm text-gray-500">2021 – Actualidad</p>
                     <p class="text-gray-300 mt-2 text-sm">
-                        Ej: "Curso intensivo enfocado en desarrollo FullStack con MERN." o "Proyecto final destacado: [Nombre del Proyecto]."
+                        Enfocado en el desarrollo de software, algoritmos y estructuras de datos.
                     </p>
                 </div>
-                <div class="glassmorphism p-6 rounded-lg shadow-xl">
-                    <h3 class="text-xl font-semibold text-blue-300">[Otro Título, Curso o Certificación]</h3>
-                    <p class="text-gray-400">[Nombre de la Institución o Plataforma]</p>
-                    <p class="text-sm text-gray-500">MM/AAAA – MM/AAAA</p>
-                </div>
+            </div>
+    
+            <!-- Botón para ver más en el CV -->
+            <div class="text-center mt-12">
+                 <p class="text-center text-gray-400 mb-4 max-w-2xl mx-auto">
+                    Para ver otros cursos y certificaciones:
+                </p>
+                <a href="cv.html" target="_blank" class="btn-secondary py-3 px-8 rounded-lg text-lg font-semibold inline-block">
+                    <i class="fas fa-file-alt mr-2"></i> Ver más en mi CV
+                </a>
             </div>
         </div>
     </section>
@@ -298,7 +264,7 @@
                         <i class="fab fa-linkedin"></i>
                     </a>
                 </div>
-                 <a href="cv_placeholder.pdf" target="_blank" class="btn-primary py-3 px-6 rounded-lg text-lg font-semibold inline-block w-full md:w-auto">
+                 <a href="Paginas secundarias/cv.html" target="_blank" class="btn-primary py-3 px-6 rounded-lg text-lg font-semibold inline-block w-full md:w-auto">
                     <i class="fas fa-file-pdf mr-2"></i>Ver mi CV completo
                 </a>
             </div>
@@ -306,7 +272,7 @@
     </section>
 
     <footer class="py-8 bg-gray-950 text-center text-gray-500 border-t border-gray-700">
-        <p>&copy; <span id="currentYear"></span> [Tu Nombre]. Todos los derechos reservados.</p>
+        <p>&copy; <span id="currentYear"></span> Santiago Posso. Todos los derechos reservados.</p>
         <p class="text-sm">Diseñado con <i class="fas fa-heart text-red-500"></i> e inspirado en la comunidad de desarrollo.</p>
     </footer>
 

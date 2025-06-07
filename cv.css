@@ -1,0 +1,58 @@
+/* Estilos base del cuerpo y fuente */
+body {
+    font-family: 'Inter', sans-serif;
+    color: #E5E7EB; /* text-gray-200 */
+}
+
+/* Contenedor que aloja el visor de PDF. Le damos una altura máxima para que funcione bien en todas las pantallas */
+.pdf-viewer-container {
+    height: 80vh; /* Ocupa el 80% de la altura de la pantalla */
+    padding: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* El iframe que contiene el PDF */
+.pdf-iframe {
+    width: 100%;
+    height: 100%;
+    border: none; /* Quitamos el borde por defecto del iframe */
+    border-radius: 0.5rem; /* Esquinas redondeadas */
+}
+
+/* Animación sutil para la carga del contenedor principal */
+.container {
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Estilos para botones, para que coincidan con tu portafolio */
+.btn-primary {
+    background-color: #3B82F6;
+    color: white;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.btn-primary:hover {
+    background-color: #2563EB;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    border: 1px solid #3B82F6;
+    color: #3B82F6;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+.btn-secondary:hover {
+    background-color: #3B82F6;
+    color: white;
+    transform: translateY(-2px);
+}
