@@ -16,8 +16,8 @@
             <a href="images/logohtml.png" class="text-2xl font-bold text-white hover:text-blue-400 transition duration-300"> </a>
             <nav class="space-x-6 hidden md:flex">
                 <a href="#about" class="nav-link text-gray-300">Sobre Mí</a>
-                <a href="#skills" class="nav-link text-gray-300">Habilidades</a>
                 <a href="#projects" class="nav-link text-gray-300">Proyectos</a>
+                <a href="#skills" class="nav-link text-gray-300">Habilidades</a>
                 <a href="#education" class="nav-link text-gray-300">Formación</a>
                 <a href="#contact" class="nav-link text-gray-300">Contacto</a>
             </nav>
@@ -29,8 +29,8 @@
         </div>
         <div id="mobile-menu" class="hidden md:hidden glassmorphism">
             <a href="#about" class="block py-2 px-6 text-gray-300 hover:bg-gray-700">Sobre Mí</a>
-            <a href="#skills" class="block py-2 px-6 text-gray-300 hover:bg-gray-700">Habilidades</a>
             <a href="#projects" class="block py-2 px-6 text-gray-300 hover:bg-gray-700">Proyectos</a>
+            <a href="#skills" class="block py-2 px-6 text-gray-300 hover:bg-gray-700">Habilidades</a>
             <a href="#education" class="block py-2 px-6 text-gray-300 hover:bg-gray-700">Formación</a>
             <a href="#contact" class="block py-2 px-6 text-gray-300 hover:bg-gray-700">Contacto</a>
         </div>
@@ -42,7 +42,7 @@
                 ¡Hola! Soy <span class="text-blue-400">Santiago</span>
             </h1>
             <div class="typewriter-container text-xl md:text-2xl text-gray-300 mb-8">
-                 <span id="typewriter-target" class="typewriter-text"></span>
+               <span id="typewriter-target" class="typewriter-text"></span>
             </div>
             <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-10">
                 Apasionado por transformar ideas en soluciones digitales impactantes y eficientes.
@@ -59,45 +59,96 @@
                 <a href="https://github.com/tu_usuario" target="_blank" class="text-gray-400 hover:text-blue-400 transition duration-300 text-3xl">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="https://linkedin.com/in/tu_usuario" target="_blank" class="text-gray-400 hover:text-blue-400 transition duration-300 text-3xl">
+                <a href="https://www.linkedin.com/in/posso4116bb196" target="_blank" class="text-gray-400 hover:text-blue-400 transition duration-300 text-3xl">
                     <i class="fab fa-linkedin"></i>
                 </a>
-                <!-- <a href="https://twitter.com/tu_usuario" target="_blank" class="text-gray-400 hover:text-blue-400 transition duration-300 text-3xl">
-                    <i class="fab fa-twitter"></i>
-                </a> -->
             </div>
         </div>
     </section>
 
-    <section id="about" class="bg-gray-800 px-6">
-        <div class="container mx-auto py-20">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-2 section-title-underline mx-auto">Sobre Mí</h2>
-            <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto">Un poco más sobre quién soy y qué me motiva.</p>
-            <div class="flex flex-col md:flex-row items-center gap-12">
-                <div class="md:w-1/3 text-center">
-                    <img src="images/foto.jpg" alt="Más sobre mí" class="rounded-lg shadow-xl mx-auto w-64 h-64 md:w-full md:h-auto max-w-sm object-cover">
+    <!-- ====== SECCIÓN "SOBRE MÍ" (NUEVO DISEÑO INMERSIVO) ====== -->
+    <section id="about" class="bg-gray-800 px-6 min-h-screen flex flex-col justify-center items-center">
+        <div class="container mx-auto text-center py-20">
+            
+            <!-- Título Agrandado -->
+            <h2 class="text-5xl md:text-6xl font-bold mb-4">Sobre Mí</h2>
+            <!-- Subtítulo Alineado -->
+            <p class="text-lg text-gray-400 mb-16 max-w-2xl mx-auto">Quién soy, cómo trabajo y qué me impulsa a crear.</p>
+            
+            <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12 lg:gap-16">
+                <div class="md:w-1/2 text-center flex-shrink-0">
+                    <img src="images/foto.jpg" alt="Retrato profesional de Santiago Posso, desarrollador de software." class="rounded-lg shadow-2xl mx-auto w-full max-w-md object-cover">
                 </div>
-                <div class="md:w-2/3 text-gray-300 space-y-4 text-lg">
+                <div class="md:w-1/2 text-gray-300 space-y-5 text-lg leading-relaxed text-left">
                     <p>
-                        Soy Santiago, un desarrollador con una profunda pasión por [tu área de especialización, ej: el desarrollo web, la creación de aplicaciones móviles, la ciencia de datos]. Me encanta enfrentarme a nuevos desafíos y aprender continuamente en este campo tan dinámico.
+                        ¡Hola! Soy Santiago, un desarrollador de software especializado en la creación de <strong>experiencias web fluidas y de alto rendimiento.</strong> Mi pasión es convertir ideas complejas en interfaces de usuario elegantes, intuitivas y, sobre todo, efectivas.
                     </p>
                     <p>
-                        Mi objetivo es crear software que no solo funcione a la perfección, sino que también ofrezca una experiencia de usuario intuitiva y agradable. Creo firmemente en el poder de la tecnología para resolver problemas complejos y mejorar la vida de las personas.
+                        Mi filosofía se basa en aplicar la <strong>ingeniería como una herramienta para resolver problemas reales.</strong> Me sumerjo en cada proyecto para entender sus objetivos y utilizar la tecnología como una solución a lo que se necesite, garantizando que el producto final no solo sea técnicamente sólido, sino que también impulse el crecimiento y cumpla las metas del cliente.
                     </p>
                     <p>
-                        Me considero una persona proactiva, con gran capacidad de resolución de problemas, trabajo bien en equipo y siempre estoy buscando maneras de mejorar mis habilidades y conocimientos.
-                    </p>
-                    <p>
-                        Fuera del mundo del código, disfruto de [tus hobbies, ej: leer sobre nuevas tecnologías, practicar senderismo, tocar la guitarra]. Estas actividades me ayudan a mantener una perspectiva fresca y creativa.
+                        Soy un firme creyente del <strong>aprendizaje continuo.</strong> Fuera del teclado, me encontrarás siempre explorando las últimas tendencias en tecnología o disfrutando de una buena partida de ajedrez. Esta curiosidad constante me ayuda a pensar de manera estratégica y a abordar cada nuevo desafío con una perspectiva fresca y creativa.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="skills" class="bg-gray-900 px-6">
-        <div class="container mx-auto py-20">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-2 section-title-underline mx-auto">Habilidades Técnicas</h2>
+    <section id="projects" class="bg-gray-900 px-6">
+        <div class="container mx-auto pt-20 pb-32">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 mx-auto">Proyectos Destacados</h2>
+            <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto">Algunos de los proyectos en los que he tenido el placer de participar.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <a href="growthtogether.html" class="project-card block bg-gray-800 rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-transform duration-300 group">
+                    <div class="relative overflow-hidden">
+                        <img src="images/growthtogether.png" alt="Página de inicio de GrowthTogether" class="w-full h-56 object-contain p-2 group-hover:opacity-75 transition-opacity duration-300">
+                    </div>
+                    <div class="p-6 flex flex-col">
+                        <h3 class="text-2xl font-semibold mb-2 text-blue-400">GrowthTogether</h3>
+                        <p class="text-gray-400 mb-4 text-sm flex-grow">
+                            Landing Page para una comunidad de empresarios.
+                        </p>
+                        <div class="mt-auto pt-4 border-t border-gray-700 text-right text-blue-400 font-semibold">
+                            Ver Caso de Estudio &rarr;
+                        </div>
+                    </div>
+                </a>
+                <a href="backline.html" class="project-card block bg-gray-800 rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-transform duration-300 group">
+                   <div class="relative overflow-hidden">
+                        <img src="https://placehold.co/600x400/1F2937/FFFFFF?text=Backline.com&font=Inter" alt="Proyecto Backline.com" class="w-full h-56 object-cover group-hover:opacity-75 transition-opacity duration-300">
+                    </div>
+                    <div class="p-6 flex flex-col">
+                        <h3 class="text-2xl font-semibold mb-2 text-green-400">BACKLINE.COM</h3>
+                        <p class="text-gray-400 mb-4 text-sm flex-grow">
+                            Página web de alquiler de instrumentos.
+                        </p>
+                        <div class="mt-auto pt-4 border-t border-gray-700 text-right text-green-400 font-semibold">
+                            Ver Caso de Estudio &rarr;
+                        </div>
+                    </div>
+                </a>
+                <div class="project-card bg-gray-800 rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <div class="relative overflow-hidden">
+                        <img src="https://placehold.co/600x400/EC4899/FFFFFF?text=Proyecto+3&font=Inter" alt="Próximo proyecto" class="w-full h-56 object-cover">
+                    </div>
+                    <div class="p-6 flex flex-col">
+                        <h3 class="text-2xl font-semibold mb-2 text-pink-400">Próximo Proyecto</h3>
+                        <p class="text-gray-400 mb-4 text-sm flex-grow">
+                            Aquí irá la descripción de mi siguiente gran proyecto.
+                        </p>
+                         <div class="mt-auto pt-4 border-t border-gray-700 text-right text-gray-500 font-semibold">
+                            Próximamente...
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="skills" class="bg-gray-800 px-6">
+        <div class="container mx-auto pt-20 pb-32">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 mx-auto">Habilidades Técnicas</h2>
             <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto">Las herramientas y tecnologías con las que me siento cómodo trabajando.</p>
             <div class="space-y-10">
                 <div>
@@ -145,74 +196,11 @@
         </div>
     </section>
 
-    <section id="projects" class="bg-gray-800 px-6">
-        <div class="container mx-auto py-20">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-2 section-title-underline mx-auto">Proyectos Destacados</h2>
-            <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto">Algunos de los proyectos en los que he tenido el placer de participar.</p>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                
-                <!-- ====== Tarjeta del Proyecto 1: GrowthTogether ====== -->
-                <!-- Se envuelve toda la tarjeta en una etiqueta <a> para que sea un gran enlace. -->
-                <a href="growthtogether.html" class="project-card block bg-gray-900 rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-transform duration-300 group">
-                    <div class="relative overflow-hidden">
-                        <img src="images/growthtogether.png" alt="Página de inicio de GrowthTogether" class="w-full h-56 object-contain p-2 group-hover:opacity-75 transition-opacity duration-300">
-                    </div>
-                    <div class="p-6 flex flex-col">
-                        <h3 class="text-2xl font-semibold mb-2 text-blue-400">GrowthTogether</h3>
-                        <p class="text-gray-400 mb-4 text-sm flex-grow">
-                            Landing Page para una comunidad de empresarios.
-                        </p>
-                        <div class="mt-auto pt-4 border-t border-gray-700 text-right text-blue-400 font-semibold">
-                            Ver Caso de Estudio &rarr;
-                        </div>
-                    </div>
-                </a>
-    
-                <!-- ====== Tarjeta del Proyecto 2: Backline.com ====== -->
-                <!-- Se repite el mismo patrón para el segundo proyecto. -->
-                <a href="backline.html" class="project-card block bg-gray-900 rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-transform duration-300 group">
-                     <div class="relative overflow-hidden">
-                        <img src="https://placehold.co/600x400/1F2937/FFFFFF?text=Backline.com&font=Inter" alt="Proyecto Backline.com" class="w-full h-56 object-cover group-hover:opacity-75 transition-opacity duration-300">
-                    </div>
-                    <div class="p-6 flex flex-col">
-                        <h3 class="text-2xl font-semibold mb-2 text-green-400">BACKLINE.COM</h3>
-                        <p class="text-gray-400 mb-4 text-sm flex-grow">
-                            Página web de alquiler de instrumentos.
-                        </p>
-                        <div class="mt-auto pt-4 border-t border-gray-700 text-right text-green-400 font-semibold">
-                            Ver Caso de Estudio &rarr;
-                        </div>
-                    </div>
-                </a>
-    
-                <!-- ====== Tarjeta de Proyecto Futuro (Placeholder) ====== -->
-                <!-- Esta tarjeta no tiene enlace, para que puedas añadir tu próximo proyecto. -->
-                <div class="project-card bg-gray-900 rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
-                    <div class="relative overflow-hidden">
-                        <img src="https://placehold.co/600x400/EC4899/FFFFFF?text=Proyecto+3&font=Inter" alt="Próximo proyecto" class="w-full h-56 object-cover">
-                    </div>
-                    <div class="p-6 flex flex-col">
-                        <h3 class="text-2xl font-semibold mb-2 text-pink-400">Próximo Proyecto</h3>
-                        <p class="text-gray-400 mb-4 text-sm flex-grow">
-                            Aquí irá la descripción de mi siguiente gran proyecto.
-                        </p>
-                         <div class="mt-auto pt-4 border-t border-gray-700 text-right text-gray-500 font-semibold">
-                            Próximamente...
-                        </div>
-                    </div>
-                </div>
-    
-            </div>
-        </div>
-    </section>
-
-    <section id="education" class="bg-gray-800 px-6">
-        <div class="container mx-auto py-20">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-2 section-title-underline mx-auto">Formación Académica</h2>
+    <section id="education" class="bg-gray-900 px-6">
+        <div class="container mx-auto pt-20 pb-32">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 mx-auto">Formación Académica</h2>
             <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto">Mi principal centro de estudios y conocimientos.</p>
             
-            <!-- Tarjeta principal de formación -->
             <div class="max-w-2xl mx-auto">
                 <div class="glassmorphism p-6 rounded-lg shadow-xl text-center">
                     <h3 class="text-xl font-semibold text-blue-300">Ingeniería de Sistemas</h3>
@@ -223,12 +211,11 @@
                     </p>
                 </div>
             </div>
-    
-            <!-- Botón para ver más en el CV -->
+            
             <div class="text-center mt-12">
-                 <p class="text-center text-gray-400 mb-4 max-w-2xl mx-auto">
-                    Para ver otros cursos y certificaciones:
-                </p>
+                   <p class="text-center text-gray-400 mb-4 max-w-2xl mx-auto">
+                       Para ver otros cursos y certificaciones:
+                   </p>
                 <a href="cv.html" target="_blank" class="btn-secondary py-3 px-8 rounded-lg text-lg font-semibold inline-block">
                     <i class="fas fa-file-alt mr-2"></i> Ver más en mi CV
                 </a>
@@ -236,9 +223,9 @@
         </div>
     </section>
 
-    <section id="contact" class="bg-gray-900 px-6">
-        <div class="container mx-auto py-20 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-2 section-title-underline mx-auto">Hablemos</h2>
+    <section id="contact" class="bg-gray-800 px-6">
+        <div class="container mx-auto pt-20 pb-32">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 mx-auto">Hablemos</h2>
             <p class="text-gray-400 mb-10 max-w-xl mx-auto">
                 Estoy disponible para nuevas oportunidades y colaboraciones. ¡No dudes en contactarme!
             </p>
@@ -257,16 +244,16 @@
                 </div>
                 <p class="text-gray-300 mb-2">o encuéntrame en:</p>
                 <div class="flex justify-center space-x-6 mb-8">
-                     <a href="https://github.com/tu_usuario" target="_blank" class="text-gray-400 hover:text-blue-400 transition duration-300 text-2xl">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://linkedin.com/in/tu_usuario" target="_blank" class="text-gray-400 hover:text-blue-400 transition duration-300 text-2xl">
+                       <a href="https://github.com/tu_usuario" target="_blank" class="text-gray-400 hover:text-blue-400 transition duration-300 text-2xl">
+                           <i class="fab fa-github"></i>
+                       </a>
+                    <a href="https://www.linkedin.com/in/posso4116bb196" target="_blank" class="text-gray-400 hover:text-blue-400 transition duration-300 text-2xl">
                         <i class="fab fa-linkedin"></i>
                     </a>
                 </div>
-                 <a href="Paginas secundarias/cv.html" target="_blank" class="btn-primary py-3 px-6 rounded-lg text-lg font-semibold inline-block w-full md:w-auto">
-                    <i class="fas fa-file-pdf mr-2"></i>Ver mi CV completo
-                </a>
+                   <a href="cv.html" target="_blank" class="btn-primary py-3 px-6 rounded-lg text-lg font-semibold inline-block w-full md:w-auto">
+                       <i class="fas fa-file-pdf mr-2"></i>Ver mi CV completo
+                   </a>
             </div>
         </div>
     </section>

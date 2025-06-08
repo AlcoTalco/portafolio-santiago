@@ -18,17 +18,6 @@ body {
     text-shadow: 0 0 15px rgba(59, 130, 246, 0.7), 0 0 30px rgba(59, 130, 246, 0.5);
 }
 
-/* Subrayado para los títulos de sección */
-.section-title-underline::after {
-    content: '';
-    display: block;
-    width: 60px;
-    height: 4px;
-    background-color: #3B82F6; /* Color principal del tema */
-    margin-top: 8px;
-    border-radius: 2px;
-}
-
 /* Transición para imágenes en las tarjetas de proyecto */
 .project-card img {
     transition: transform 0.3s ease-out;
